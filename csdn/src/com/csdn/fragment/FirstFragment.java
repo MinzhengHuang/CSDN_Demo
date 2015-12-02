@@ -9,6 +9,7 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 
 import com.csdn.R;
+import com.csdn.touchevent.TouchEventActivity;
 
 public class FirstFragment extends Fragment implements OnClickListener{
 
@@ -16,6 +17,7 @@ public class FirstFragment extends Fragment implements OnClickListener{
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		View view = inflater.inflate(R.layout.fragment_first, container, false);
+		view.findViewById(R.id.btn_TouchEvent).setOnClickListener(this);
 		return view;
 
 	}
@@ -24,6 +26,9 @@ public class FirstFragment extends Fragment implements OnClickListener{
 	public void onClick(View v) {
 		Intent intent=null;
 		switch (v.getId()) {
+		case R.id.btn_TouchEvent:
+			intent=new Intent(getActivity(), TouchEventActivity.class);
+			break;
 		default:
 			break;
 		}
