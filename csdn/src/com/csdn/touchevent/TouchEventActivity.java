@@ -8,6 +8,8 @@ import android.view.MotionEvent;
 import com.csdn.R;
 
 /**
+ * http://blog.csdn.net/morgan_xww/article/details/9372285
+ *
  * Android TouchEvent事件传递机制
  *
  * 跟touch事件相关的3个方法：
