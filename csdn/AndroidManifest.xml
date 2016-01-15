@@ -27,6 +27,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".touchevent.TouchEventActivity"></activity>
+        <activity android:name=".activity.RiseNumberActivity" ></activity>
     </application>
 
 </manifest>
