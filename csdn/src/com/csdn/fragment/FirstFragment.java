@@ -7,7 +7,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
-
 import com.csdn.R;
 import com.csdn.activity.RiseNumberActivity;
 import com.csdn.touchevent.TouchEventActivity;

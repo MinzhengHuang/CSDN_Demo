@@ -72,15 +72,17 @@ public class RiseNumberTextView extends TextView implements IRiseNumber {
 
         valueAnimator
                 .addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+
                     @Override
                     public void onAnimationUpdate(ValueAnimator valueAnimator) {
-
                         setText(fnum.format(Float.parseFloat(valueAnimator
                                 .getAnimatedValue().toString())));
                         if (valueAnimator.getAnimatedFraction() >= 1) {
                             mPlayingState = STOPPED;
-                            if (mEndListener != null)
+                            if (mEndListener != null) {
                                 mEndListener.onEndFinish();
+                            }
+
                         }
                     }
 
@@ -95,12 +97,12 @@ public class RiseNumberTextView extends TextView implements IRiseNumber {
      */
     private void runInt() {
 
-        ValueAnimator valueAnimator = ValueAnimator.ofInt((int) fromNumber,
-                (int) number);
+        ValueAnimator valueAnimator = ValueAnimator.ofInt((int) fromNumber, (int) number);
         valueAnimator.setDuration(duration);
 
         valueAnimator
                 .addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+
                     @Override
                     public void onAnimationUpdate(ValueAnimator valueAnimator) {
                         //设置瞬时的数据值到界面上
@@ -108,9 +110,10 @@ public class RiseNumberTextView extends TextView implements IRiseNumber {
                         if (valueAnimator.getAnimatedFraction() >= 1) {
                             //设置状态为停止
                             mPlayingState = STOPPED;
-                            if (mEndListener != null)
+                            if (mEndListener != null) {
                                 //通知监听器，动画结束事件
                                 mEndListener.onEndFinish();
+                            }
                         }
                     }
                 });
@@ -205,7 +208,7 @@ public class RiseNumberTextView extends TextView implements IRiseNumber {
         /**
          * 当动画播放结束时的回调方法
          */
-        public void onEndFinish();
+        void onEndFinish();
     }
 
 }
