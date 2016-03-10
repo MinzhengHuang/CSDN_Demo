@@ -1,17 +1,24 @@
 package com.csdn.activity;
 
 import android.app.Activity;
+import android.graphics.Bitmap;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
+
 import com.csdn.R;
 import com.csdn.view.RiseNumberTextView;
 
 public class RiseNumberActivity extends Activity {
 
 	private RiseNumberTextView rnTextView;
+	private ImageView ivPhoto;
+	private TextView tvJieping;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +31,8 @@ public class RiseNumberActivity extends Activity {
 	private void setupViews() {
 		// 获取到RiseNumberTextView对象
 		rnTextView = (RiseNumberTextView) findViewById(R.id.risenumber_textview);
+		tvJieping= (TextView) findViewById(R.id.tv_jieping);
+		ivPhoto= (ImageView) findViewById(R.id.iv_photo);
 		// 设置数据
 		rnTextView.withNumber(2666.50f);
 		// 设置动画播放时间
@@ -50,6 +59,22 @@ public class RiseNumberActivity extends Activity {
 					rnTextView.start();
 				}
 
+			}
+		});
+		/**
+		 * 必须事先在assets底下创建一fonts文件夹 并放入要使用的字体文件(.ttf)
+		 * 并提供相对路径给creatFromAsset()来创建Typeface对象
+		 */
+		Typeface fontFace = Typeface.createFromAsset(getAssets(), "fonts/test.ttf");
+		tvJieping.setTypeface(fontFace);
+		tvJieping.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				View view = v.getRootView();
+				view.setDrawingCacheEnabled(true);
+				view.buildDrawingCache();
+				Bitmap bitmap = view.getDrawingCache();
+				ivPhoto.setImageBitmap(bitmap);
 			}
 		});
 	}
