@@ -30,6 +30,7 @@
         <activity android:name=".activity.RiseNumberActivity"></activity>
         <activity android:name=".activity.TimeLineActivity"></activity>
         <activity android:name=".activity.BadgeViewActivity" ></activity>
+        <activity android:name=".activity.HorizontalListViewActivity" ></activity>
     </application>
 
 </manifest>

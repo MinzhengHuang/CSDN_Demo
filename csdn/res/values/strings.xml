@@ -12,4 +12,9 @@
     <string name="tab_found">发现</string>
     <string name="tab_me">我</string>
 
+    <string name="simple_string_list">Simple String List</string>
+    <string name="custom_adapter_list">Custom Adapter List</string>
+    <string name="custom_adapter_list_with_dividers">Custom Adapter List with dividers</string>
+
+
 </resources>

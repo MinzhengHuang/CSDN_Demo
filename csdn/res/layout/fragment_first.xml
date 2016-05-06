@@ -33,4 +33,9 @@
         style="@style/btn_style"
         android:text="BadgeView" />
 
+    <Button
+        android:id="@+id/btn_HorizontalListView"
+        style="@style/btn_style"
+        android:text="HorizontalListView" />
+
 </LinearLayout>
