@@ -7,9 +7,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
+
 import com.csdn.R;
 import com.csdn.activity.BadgeViewActivity;
 import com.csdn.activity.HorizontalListViewActivity;
+import com.csdn.activity.IndexableListViewActivity;
 import com.csdn.activity.RiseNumberActivity;
 import com.csdn.activity.TimeLineActivity;
 import com.csdn.touchevent.TouchEventActivity;
@@ -25,6 +27,7 @@ public class FirstFragment extends Fragment implements OnClickListener {
         view.findViewById(R.id.btn_TimeLine).setOnClickListener(this);
         view.findViewById(R.id.btn_BadgeView).setOnClickListener(this);
         view.findViewById(R.id.btn_HorizontalListView).setOnClickListener(this);
+        view.findViewById(R.id.btn_IndexableListView).setOnClickListener(this);
         return view;
 
     }
@@ -47,6 +50,9 @@ public class FirstFragment extends Fragment implements OnClickListener {
                 break;
             case R.id.btn_HorizontalListView:
                 intent = new Intent(getActivity(), HorizontalListViewActivity.class);
+                break;
+            case R.id.btn_IndexableListView:
+                intent = new Intent(getActivity(), IndexableListViewActivity.class);
                 break;
             default:
                 break;
