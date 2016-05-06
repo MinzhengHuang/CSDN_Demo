@@ -43,4 +43,8 @@
         style="@style/btn_style"
         android:text="IndexableListView" />
 
+    <Button
+        android:id="@+id/btn_LockPatternView"
+        style="@style/btn_style"
+        android:text="LockPatternView" />
 </LinearLayout>
