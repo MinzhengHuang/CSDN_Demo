@@ -29,6 +29,7 @@
         <activity android:name=".touchevent.TouchEventActivity"></activity>
         <activity android:name=".activity.RiseNumberActivity"></activity>
         <activity android:name=".activity.TimeLineActivity"></activity>
+        <activity android:name=".activity.BadgeViewActivity" ></activity>
     </application>
 
 </manifest>
