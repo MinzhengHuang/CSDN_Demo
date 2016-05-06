@@ -3,4 +3,8 @@
     <color name="white">#ffffff</color>
     <color name="background_tab_pressed">#6633B5E5</color>
     <color name="rise_number_text_color_red">#ff3e57</color>
+    <color name="grey">#C1CDCD</color>
+    <color name="yellow">#ff7300</color>
+    <color name="time_line_bg">#b3b3b3</color>
+    <color name="head_line_bg">#cccccc</color>
 </resources>
