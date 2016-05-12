@@ -10,24 +10,24 @@ import android.view.ViewGroup;
 
 import com.csdn.R;
 
-public class SecondFragment extends Fragment implements OnClickListener{
+public class SecondFragment extends Fragment implements OnClickListener {
 
-	@Override
-	public View onCreateView(LayoutInflater inflater, ViewGroup container,
-			Bundle savedInstanceState) {
-		View view = inflater.inflate(R.layout.fragment_second, container, false);
-		return view;
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment_second, container, false);
+        return view;
 
-	}
+    }
 
-	@Override
-	public void onClick(View v) {
-		Intent intent=null;
-		switch (v.getId()) {
+    @Override
+    public void onClick(View v) {
+        Intent intent = null;
+        switch (v.getId()) {
 
-		default:
-			break;
-		}
-		startActivity(intent);
-	}
+            default:
+                break;
+        }
+        startActivity(intent);
+    }
 }
