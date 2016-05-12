@@ -13,6 +13,7 @@ import com.csdn.activity.BadgeViewActivity;
 import com.csdn.activity.HorizontalListViewActivity;
 import com.csdn.activity.IndexableListViewActivity;
 import com.csdn.activity.RiseNumberActivity;
+import com.csdn.activity.SwipeMenuListViewActivity;
 import com.csdn.activity.TimeLineActivity;
 import com.csdn.pattern.UnlockGesturePasswordActivity;
 import com.csdn.touchevent.TouchEventActivity;
@@ -30,6 +31,7 @@ public class FirstFragment extends Fragment implements OnClickListener {
         view.findViewById(R.id.btn_HorizontalListView).setOnClickListener(this);
         view.findViewById(R.id.btn_IndexableListView).setOnClickListener(this);
         view.findViewById(R.id.btn_LockPatternView).setOnClickListener(this);
+        view.findViewById(R.id.btn_SwipeMenuListView).setOnClickListener(this);
         return view;
 
     }
@@ -58,6 +60,9 @@ public class FirstFragment extends Fragment implements OnClickListener {
                 break;
             case R.id.btn_LockPatternView:
                 intent = new Intent(getActivity(), UnlockGesturePasswordActivity.class);
+                break;
+            case R.id.btn_SwipeMenuListView:
+                intent = new Intent(getActivity(), SwipeMenuListViewActivity.class);
                 break;
             default:
                 break;

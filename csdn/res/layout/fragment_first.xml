@@ -47,4 +47,8 @@
         android:id="@+id/btn_LockPatternView"
         style="@style/btn_style"
         android:text="LockPatternView" />
+    <Button
+        android:id="@+id/btn_SwipeMenuListView"
+        style="@style/btn_style"
+        android:text="SwipeMenuListView" />
 </LinearLayout>

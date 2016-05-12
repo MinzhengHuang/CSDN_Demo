@@ -30,12 +30,15 @@
         <activity android:name=".touchevent.TouchEventActivity"></activity>
         <activity android:name=".activity.RiseNumberActivity"></activity>
         <activity android:name=".activity.TimeLineActivity"></activity>
-        <activity android:name=".activity.BadgeViewActivity" ></activity>
-        <activity android:name=".activity.HorizontalListViewActivity" ></activity>
-        <activity android:name=".activity.IndexableListViewActivity" ></activity>
-        <activity android:name=".pattern.UnlockGesturePasswordActivity" ></activity>
-        <activity android:name=".pattern.CreateGesturePasswordActivity" ></activity>
-        <activity android:name=".pattern.GuideGesturePasswordActivity" ></activity>
+        <activity android:name=".activity.BadgeViewActivity"></activity>
+        <activity android:name=".activity.HorizontalListViewActivity"></activity>
+        <activity android:name=".activity.IndexableListViewActivity"></activity>
+        <activity android:name=".pattern.UnlockGesturePasswordActivity"></activity>
+        <activity android:name=".pattern.CreateGesturePasswordActivity"></activity>
+        <activity android:name=".pattern.GuideGesturePasswordActivity"></activity>
+        <activity android:name=".activity.SwipeMenuListViewActivity"></activity>
+        <activity android:name=".swipemenulistview.SimpleActivity"></activity>
+        <activity android:name=".swipemenulistview.DifferentMenuActivity"></activity>
     </application>
 
 </manifest>
